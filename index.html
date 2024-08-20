@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="./img/logo.svg">
+</head>
+<body>
+    <div class="container">
+        <nav class="d-flex">
+            <img class="logo" src="img/logo.svg" alt="">
+        </nav>
+        <div class="content d-flex flex-column flex-md-row py-5">
+            <div class="col-12 col-md-8">
+                <div class="columna1 d-flex flex-column justify-content-between h-100 py-5 py-md-0">
+                    <input class="type my-5" type="text" placeholder="Digite seu texto">
+                    <div class="buttones">
+                        <div class="d-flex py-4 justify-content-center justify-content-md-start">
+                            <img class ="pe-2" src="img/bi_exclamation-circle-fill.svg" alt="">
+                            <p class="m-0">Apenas letras minúsculas e sem acento.</p>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row align-items-center">
+                            <button onclick="crypt()" class="button button01 my-2 my-md-0 mx-md-1">encriptar</button>
+                            <button onclick="decrypt()" class="button button02 my-2 my-md-0 mx-md-1">desencriptar</button>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-4 d-flex flex-column justify-content-center text-center p-3 column">
+                <div class="no-content d-flex flex-column justifiy-content-center">
+                    <img class="img2 quitar" src="img/img1.svg" alt="">
+                    <h2 class="py-2 resultado">Nenhuma mensagem encontrada</h2>
+                    <p class="quitar">Digite um texto que você deseja encriptar ou descriptar.</p>
+                    <div onclick="copyPortpapeles(document.querySelector('.resultado').innerHTML)" class="ocult my-2 my-md-0 mx-md-1">
+                        <img src="img/copiar.png" alt="">
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
